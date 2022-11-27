@@ -73,7 +73,7 @@ body {
     color: var(--white);
     transition-duration: 0.4s;
     font-size: 2.3vmin;
-    width: 12vw;
+    width: 12vmax;
     height: 5vh;
     border: 0px;
     pointer-events:fill;
