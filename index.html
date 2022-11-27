@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/img/icon.png">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="sweetalert\node_modules\sweetalert\dist\sweetalert.min.js"></script>
+    <script src="./script.js"></script>
+    <title>Живая Школа</title>
+</head>
+<body onload="clearClear()">
+    <div id="header">
+        <h1 id="header-text">
+            Живая Школа.
+        </h1>
+    </div>
+    
+    <div id="description">   
+        <p id="description-text">
+            Мы предлагаем готовую технологию перехода от традиционной образовательной школьной системы к центростремительной, делая упор на развитие осознанности и системного мышления ученика. Технология опирается на многолетний опыт внедрения и применения методик в существующей государственной школе.
+            Технология позволяет снизить нагрузку на учителей, меняя их роль в учебном процессе с надзирателей, инициирующих процесс на наставников, поддерживающих его. Ученики при этом самостоятельно вовлекаются в изучение материала, без привлечения сторонней помощи — родителей или репетиторов.
+            Традиционная система опирается на вербализм, оторванность от реальных потребностей и жизненных примеров; передачу готовой информации и знаний и авторитарность учителя. Мы же предлагаем в порядке эксперимента отказаться от давящего шаблона и сделать шаг навстречу системе образования будущего.
+            Воспользовавшись технологией нашей школы, вы в результате получите: повышение успеваемости учеников, значительное снижение нагрузки на преподавательский состав, оздоровление ученического социума, доверие родителей и повышение спроса на Ваши образовательные услуги.
+            Для связи с нами оставьте ниже свои контактные данные, чтобы мы могли с Вами связаться и ответить на все Ваши вопросы.
+        </p>
+    </div>
+
+    <div id="fields">
+        
+        <form id="fields-form" onsubmit="onSubmit(); return false">
+            <div id="name-field">
+                <label for="name">&nbsp Имя:</label>
+                <input id="name" type="text" placeholder="Дмитрий Павлов" required>
+            </div>
+            <div id="email-field">
+                <label for="email">Email: </label>
+                <input id="email" type="email" placeholder="email@email.com" required>
+            </div>
+            <div id="submit-field">
+                <input id="submit" type="submit" value="Отправить">
+            </div>
+        </form>
+    </div>
+
+    <div id="about" class="footer">
+        <p class="alignleft">Телефон: +7(999)762-21-47</p>
+        <p class="alignright">Telegram: @telegram</p>
+    </div>
+</body>
+</html>

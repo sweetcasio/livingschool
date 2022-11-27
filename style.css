@@ -1,0 +1,109 @@
+@font-face {
+    font-family: "avenir";
+    src: url("assets/fonts/avenirnextcyr-regular.ttf")
+} 
+
+:root {
+    --blue: #5680E9;
+    --purple: #8860D0;
+    --white: #C1C8E4;
+    --dark-purple: #7641A3;
+    --main-bg: linear-gradient(to right, var(--blue), var(--purple));
+    --description-bg: linear-gradient(to left, var(--blue), var(--purple));
+}
+
+html {
+    background-image: var(--main-bg);
+    color: var(--white);
+    font-family: "avenir";
+}
+
+body {
+    background-image: var(--main-bg);
+}
+
+#header-text {
+    padding-top: 2vh;
+    font-size: 3vw;
+    text-align: center;
+}
+    
+#description {
+    padding-left: 12vw;
+    padding-top: 0.5vh;
+    padding-right: 12vw;
+    padding-bottom: 3vh;
+}
+
+#description-text {
+    padding-left: 3vw;
+    padding-top: 3vh;   
+    padding-right: 3vw;
+    padding-bottom: 3vh;
+    text-align: justify;
+    border-style: solid;
+    font-size: 2.5vmin;
+    border-color: var(--white);
+    background-image: var(--description-bg);
+}
+
+#fields {
+    text-align: center;
+    padding-right: 4.5vw;
+    padding-top: 2vh;
+}
+
+#fields-form {
+    font-size: 3vmin;
+}
+
+#name, #email {
+    font-size: 3vmin;
+    width: 20vmax;
+    padding-left: 1px;
+}
+
+#submit-field {
+    padding-left: 4.4vw;
+    padding-top: 1vh;
+}
+
+#submit {
+    background-color: var(--dark-purple);
+    color: var(--white);
+    transition-duration: 0.4s;
+    font-size: 2.3vmin;
+    width: 12vw;
+    height: 5vh;
+    border: 0px;
+    pointer-events:fill;
+}
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 98vw;
+    position: fixed;
+    padding-left: 1vw;
+    pointer-events: none;
+}
+
+#submit:hover {
+    background-color: var(--white);
+    color: var(--dark-purple);
+}
+
+.alignleft, .alignright {
+    font-size: 2vmin;
+}
+
+.alignleft {
+    float: left;
+    pointer-events: auto;
+}
+    
+.alignright {
+    float: right;
+    pointer-events: auto;
+}
+
