@@ -50,7 +50,7 @@ function showValidError() {
         text: "Введите корректный адрес электронной почты.",
         icon: "error",
         button: "Хорошо",
-    })
+    });
 }
 
 function showUniqueError() {
@@ -59,7 +59,7 @@ function showUniqueError() {
         text: "",
         icon: "error",
         button: "Понятно",
-    })
+    });
 }
 
 function clearForm() {
@@ -68,11 +68,11 @@ function clearForm() {
 }
 
 function checkUniqueEmail(email) {
-    return localStorage.getItem(email) == null
+    return localStorage.getItem(email) == null;
 }
 
 function setEmail() {
-    localStorage.setItem(email(), name())
+    localStorage.setItem(email(), name());
 }
 
 function onSubmit() {
