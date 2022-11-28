@@ -40,7 +40,7 @@ body {
     padding-top: 3vh;   
     padding-right: 3vw;
     padding-bottom: 3vh;
-    text-align: justify;
+    text-align: center;
     border-style: solid;
     font-size: 2.5vmin;
     border-color: var(--white);
