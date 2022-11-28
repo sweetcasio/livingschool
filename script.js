@@ -12,10 +12,10 @@ const email = () => document.getElementById('email').value;
 function sendEmail() {
     Email.send({
         SecureToken: "8ce3595e-6225-4fcd-aa4b-921c97efe377",
-        To: "living_school@mail.ru",
+        To: "lifeschoolproj@gmail.com",
         From : 'item0time@gmail.com',
-        Subject : "Новые контактные данные!",
-        Body : `Имя: ${name()}\nEmail: ${email()}`,
+        Subject : "Новые контактные данные от livingschool.online!",
+        Body : `имя: ${name()} email: ${email()}`,
     }).then(message => showMessage(message));
 }
 
@@ -38,7 +38,7 @@ function cooldownButton() {
 function showMessage(message) {
     swal({
         title: message == "OK" ? "Успешно!" : message,
-        text: "Также можете связаться через контакты указанные ниже.",
+        text: "Также можете связаться через контакты, указанные ниже.",
         icon: message == "OK" ? "success" : "error",
         button: "Отлично!"
     });
